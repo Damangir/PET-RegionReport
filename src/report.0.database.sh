@@ -12,7 +12,7 @@ depends_on "${REPORT_ITEMS}"
 
 function get_path_for_subject {
 	env -i PROCDIR=$1 EXPAND=$2 SCRIPT_DIR=$SCRIPT_DIR \
-	   bash -xc 'source "$SCRIPT_DIR/directory_structure.sh";eval echo "$EXPAND"' 
+	   bash -c 'source "$SCRIPT_DIR/directory_structure.sh";eval echo "$EXPAND"' 
 }
 # We don't want this function to show up in the reproduce script
 declare -F | sort -u > "${CON_TEMPDIR}/old.functions.txt"

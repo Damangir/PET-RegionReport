@@ -1,3 +1,5 @@
+declare -r DATA_DIR=$(cd "${SCRIPT_DIR}/../data"&&pwd)
+
 declare -r QCDIR=${PROCDIR}/QC
 declare -r REPORTDIR=${PROCDIR}/Report
 
