@@ -1,0 +1,7 @@
+pet.atlas.csv 2 pet.atlas.mean.atlas.on.pet.csv
+pet.atlas.csv 4 pet.atlas.volume.atlas.on.pet.csv
+pet.atlas.csv 5 pet.atlas.sd.atlas.on.pet.csv
+
+t1.atlas.csv 2 pet.atlas.mean.pet.on.atlas.csv
+t1.atlas.csv 4 pet.atlas.volume.pet.on.atlas.csv
+t1.atlas.csv 5 pet.atlas.sd.pet.on.atlas.csv
