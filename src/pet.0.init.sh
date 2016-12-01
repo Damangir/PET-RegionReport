@@ -22,5 +22,5 @@ expects "${PETDIR}/pet.sum.reorient.nii.gz"
 check_already_run
 remove_expected_output
 
-run_and_log 1.sum.pet ${FSLPRE}fslmaths $(join " -add " $(echo "${PET_RAWS}")) "${PETDIR}/pet.sum.nii.gz"
+run_and_log 1.sum.pet ${FSLPRE}fslmaths $(pjoin " -add " $(echo "${PET_RAWS}")) "${PETDIR}/pet.sum.nii.gz"
 run_and_log 2.reorient.pet ${FSLPRE}fslreorient2std "${PETDIR}/pet.sum.nii.gz" "${PETDIR}/pet.sum.reorient.nii.gz"
